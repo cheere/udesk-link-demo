@@ -1,0 +1,6 @@
+[submodule "vue/src/package/udesk-js-link"]
+	path = vue/src/package/udesk-js-link
+	url = https://github.com/cheere/udesk-js-link.git
+[submodule "react/src/package/udesk-js-link"]
+	path = react/src/package/udesk-js-link
+	url = https://github.com/cheere/udesk-js-link.git
