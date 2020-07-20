@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: 'udesk-link-demo/'
+  publicPath: './'
 }
