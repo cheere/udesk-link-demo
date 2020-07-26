@@ -118,7 +118,7 @@ export default {
   width: 100%;
   height: 40px;
   background-color: aqua;
-  color: red;
+  color: #708090;
   display: flex;
   justify-content: center;
   align-items: center;
