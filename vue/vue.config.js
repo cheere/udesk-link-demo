@@ -4,7 +4,7 @@ console.log('isProd=>', isProd)
 console.log('isPage=>', isPage)
 
 module.exports = {
-  publicPath: isPage ? "./udesk-link-demo/" : "./",
+  publicPath: "./",
   // 线上代码 不让看源码
   productionSourceMap: isProd ? false : true,
 
