@@ -1,3 +1,6 @@
+const webpack = require('webpack')
+const {configBanner} = require('./config/util.config')
+
 const isProd = process.env.NODE_ENV === "production";
 const isPage = process.env.VUE_APP_ENV === "page";
 console.log('isProd=>', isProd)
@@ -5,13 +8,16 @@ console.log('isPage=>', isPage)
 
 module.exports = {
   publicPath: "./",
-  // 线上代码 不让看源码
   productionSourceMap: isProd ? false : true,
 
   configureWebpack: {
     output: {
-      filename: `js/[name].[chunkhash].js`,
-      chunkFilename: `js/[name].[chunkhash].js`
+      filename: `js/[name].[hash].js`,
+      chunkFilename: `js/[name].[hash].js`
     },
+
+    plugins: [
+      new webpack.BannerPlugin({banner: configBanner}),
+    ],
   }
 }
