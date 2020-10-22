@@ -1,5 +1,7 @@
 <template>
   <div class="service">
+    <h2>udesk-js-link demo</h2>
+    <div>项目默认 <b>./src/main.js</b> 对 <b>RXUdeskJSApi</b> 初始化数据是不对的，记得修改</div>
     <div class="s_b_switch" @click="swithUserInfo">{{userInfoEnable? '启用[用户信息]': '关闭[用户信息]'}}</div>
     <div class="s_b_switch" @click="swithProduct">{{productEnable? '启用[咨询对象]': '关闭[咨询对象]'}}</div>
     <div class="s_b_switch" @click="swithTicket">{{ticketEnable? '启用[工单信息]': '关闭[工单信息]'}}</div>
@@ -111,7 +113,7 @@ export default {
 <style scoped>
 
 .service {
-  padding: 0 15px;
+  padding: 0 15px 30px 15px;
 }
 .s_b_switch {
   margin-top: 20px;
