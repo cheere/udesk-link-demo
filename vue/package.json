@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "npm run serve",
     "serve": "vue-cli-service serve",
-    "build": "npm run cli_build && node copy-dist",
-    "cli_build": "vue-cli-service build",
+    "build": "vue-cli-service build",
+    "page": "npm run cli_build-page && node copy-dist",
+    "cli_build-page": "vue-cli-service build --mode page",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
