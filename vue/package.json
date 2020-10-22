@@ -6,6 +6,7 @@
     "dev": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "prod": "vue-cli-service build && node copy-dist",
     "page": "npm run cli_build-page && node copy-dist",
     "cli_build-page": "vue-cli-service build --mode page",
     "lint": "vue-cli-service lint"
